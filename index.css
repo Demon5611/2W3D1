@@ -1,0 +1,54 @@
+.buttons {
+  margin-top: 20px;
+  width: 50px;
+
+}
+.is-empty {
+  margin-top: 100px;
+  width: 100%;
+  background-color: white;
+}
+.bulma-placeholder-mixin {
+
+}
+
+div.wrap{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: ;
+  border-color: black;
+  display: block;
+  flex-wrap: wrap;
+}
+.qwestions{
+  display: block;
+flex-wrap: wrap;
+  align-items: flex-start;
+  display: flex;
+  justify-content: space-around;
+
+}
+.left{
+
+  /* display: block; */
+  /* flex-direction: row; */
+  
+  align-items: end;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.right{
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* align-items: center; */
+  /* border-radius: 15px; */
+  /* width: 50%; */
+}
+
+
+/* .is-max-desktop {
+  align-content: center;
+  align-items: flex-end;
+}  */
+
