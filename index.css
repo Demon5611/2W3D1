@@ -1,7 +1,6 @@
 .buttons {
   margin-top: 20px;
-  width: 50px;
-
+  /* width: 50px; */
 }
 .is-empty {
   margin-top: 100px;
@@ -9,10 +8,9 @@
   background-color: white;
 }
 .bulma-placeholder-mixin {
-
 }
 
-div.wrap{
+div.wrap {
   display: flex;
   flex-direction: column-reverse;
   justify-content: ;
@@ -20,35 +18,38 @@ div.wrap{
   display: block;
   flex-wrap: wrap;
 }
-.qwestions{
+.questions {
   display: block;
-flex-wrap: wrap;
+  flex-wrap: wrap;
   align-items: flex-start;
   display: flex;
   justify-content: space-around;
-
 }
-.left{
-
-  /* display: block; */
-  /* flex-direction: row; */
-  
+.left {
+  display: block;
+  flex-direction: row;
   align-items: end;
   width: 50%;
   margin-bottom: 20px;
+  /* padding-left: 4%; */
 }
 
-.right{
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* align-items: center; */
-  /* border-radius: 15px; */
-  /* width: 50%; */
+.right {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  align-content: flex-start;
+  border-radius: 15px;
+  width: 200px;
+  height: 200px;
+  border-color: blue;
+  color: black;
+  background-color: aquamarine;
+  margin-bottom: 20px;
+  right: 15px;
 }
-
 
 /* .is-max-desktop {
   align-content: center;
   align-items: flex-end;
 }  */
-
