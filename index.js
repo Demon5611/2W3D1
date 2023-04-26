@@ -19,17 +19,21 @@ let span = document.querySelectorAll('span');
 return res
 }
 
-// let str = document.querySelector('input').value
-// console.log(str)
-// let input= document.querySelector('input')
-// input.addEventListener("keydown", (event) => {
-//     if (event.key === "Enter") {
-//      console.log('yes_Enter')
-//     }
-//   });
+let str = document.querySelector('input').value
+// // console.log(str) // отдает на консоль пустую строку
 
-// const btn=document.querySelector('.buttons')
-// btn.addEventListener('click', reply)
+// нужно передать введенный текст на переменную str
+let input= document.querySelector('input')
+input.addEventListener("keydown", (event) => {
+    if (event.key === "Enter") {
+        console.log("yes_Enter worling") // пропадает с экрана сразу после появления
+        const value = event.target.value
+        str = value 
+    }
+  });
+
+const btn=document.querySelector('.buttons')
+btn.addEventListener('click', reply)
     // отправляем ответ в правое поле
     const divRight = document.querySelector('div')
     const right = document.querySelector(".right")
@@ -37,20 +41,22 @@ return res
     newDivRight.className = ("right")
     right.append(newDivRight)
     let replyText = document.createElement('p')
-    replyText.innerText = 'hello'
+    replyText.innerText = 'hello' // здесь должно быть =reply() ?
     newDivRight.append(replyText);
 
-const str='Какая численность населения Москвы ?'
-// function reply (str)
-// {
+// const str='Какая численность населения Москвы ?' 
+
+
+function reply(str)
+{
     const questions1 = 'Какая численность населения Москвы ?' // length 36
     const questions2 = 'Какая численность населения Санкт-Петербурга ?' // 46
     const questions3 = 'Может Вас интересует численность населения Самары ?'     //  51
     const questions4 = 'Или численность населения Тюмени ?'     //  34
     
-    const answers1 = 'Численность населения города по данным Росстата составляет 13 015 126 человек (2022). Из них 12 455 682 — городское население, 199 368 — сельское.'
-    const answers2 = 'Численность населения города по данным Росстата составляет 5 384 342 чел. (2021). Плотность населения — 3837,73 чел./км 2 (2021). Без учёта выделяемых отдельно населённых пунктов в составе Санкт-Петербурга, общая численность населения муниципальных округов города составляет 4 542 813 чел.'
-    const answers3 = 'Население — 1 136 709 чел. (2022), восьмой по численности населения городРоссии. В пределах агломерации (третьей по численности населения в России) проживает свыше 2,7 млн человек.'
+    const answers1 = 'Численность населения города Москва, по данным Росстата, составляет 13 015 126 человек (2022). Из них 12 455 682 — городское население, 199 368 — сельское.'
+    const answers2 = 'Численность населения города Санкт-Петербург, по данным Росстата, составляет 5 384 342 чел. (2021). Плотность населения — 3837,73 чел./км 2 (2021). Без учёта выделяемых отдельно населённых пунктов в составе Санкт-Петербурга, общая численность населения муниципальных округов города составляет 4 542 813 чел.'
+    const answers3 = 'Население города Самара  — 1 136 709 чел. (2022), восьмой по численности населения город России. В пределах агломерации (третьей по численности населения в России) проживает свыше 2,7 млн человек.'
     const answers4 = 'Численность населения города Тюмени по состоянию на 1 января 2021 года – 816,7 тыс. человек.'
     
     switch (str.length)
@@ -83,6 +89,6 @@ const str='Какая численность населения Москвы ?'
             // console.log(replyText.innerText)
     }
         
-    // }
 
-// }
+
+}

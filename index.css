@@ -46,15 +46,18 @@ div.wrap {
   color: black;
   background-color: aquamarine;
   margin-bottom: 20px;
+  text-align: justify;
 }
 .p {
   
   font-family: 'Courier New', Courier, monospace;
-
+  display:inline-block;
   width: 100%;
-  height: 100%;
+  height: 1em;
   align-content: space-around;
   justify-content: space-around;
+  text-align: justify;
+
 
 
 
